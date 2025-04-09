@@ -1,0 +1,1 @@
+web: java -jar build/libs/DIO-Decolar_Java_2025-0.0.1-SNAPSHOT.jar
