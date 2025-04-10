@@ -24,7 +24,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 })
 
 public class Application {
-	@Bean(name="entityManagerFactory")
+
 	public static void main(String[] args) {
 		SpringApplication.run(Application.class, args);
 	}
