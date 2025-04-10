@@ -14,6 +14,10 @@ public class GlobalExceptionHandler {
 
 //    private final Logger logger = LoggerFactory.getLogger(GlobalExceptionHandler.class);
 
+
+    public GlobalExceptionHandler() {
+    }
+
     @ExceptionHandler(IllegalArgumentException.class)
     public ResponseEntity<String> handlerBusinessException(IllegalArgumentException businessException) {
         return new ResponseEntity<>(businessException.getMessage(), HttpStatus.UNPROCESSABLE_ENTITY);
