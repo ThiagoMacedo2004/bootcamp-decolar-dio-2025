@@ -18,6 +18,10 @@ public class Card  {
     @Column(name = "avaliable_limit", precision = 13, scale = 2 )
     private BigDecimal limit;
 
+    public Card() {
+
+    }
+
     public Long getId() {
         return id;
     }

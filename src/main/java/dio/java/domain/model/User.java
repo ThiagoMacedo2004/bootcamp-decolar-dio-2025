@@ -24,6 +24,9 @@ public class User {
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private List<News> news;
 
+    public User() {
+    }
+
     public Long getId() {
         return id;
     }

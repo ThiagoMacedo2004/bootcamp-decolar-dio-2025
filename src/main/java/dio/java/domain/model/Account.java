@@ -22,6 +22,9 @@ public class Account {
     @Column(name = "additional_limit", precision = 13, scale = 2)
     private BigDecimal limit;
 
+    public Account() {
+    }
+
     public Long getId() {
         return id;
     }
