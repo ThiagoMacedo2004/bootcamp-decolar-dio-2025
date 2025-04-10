@@ -12,8 +12,9 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 
 @EntityScan("dio.java.domain.model")
-@EnableJpaRepositories("dio.java.domain.repository")
+//@EnableJpaRepositories("dio.java.domain.repository")
 @SpringBootApplication(exclude={DataSourceAutoConfiguration.class})
+@EnableJpaRepositories
 
 @ComponentScan(basePackages = {
 		"dio.java.domain.repository",

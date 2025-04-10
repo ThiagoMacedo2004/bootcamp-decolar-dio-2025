@@ -4,11 +4,13 @@ import dio.java.domain.model.User;
 import dio.java.domain.repository.UserRepository;
 import dio.java.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 
 import java.util.NoSuchElementException;
 
 @Service
+@Repository
 public class UserServiceImpl implements UserService {
 
     private final UserRepository userRepository;
