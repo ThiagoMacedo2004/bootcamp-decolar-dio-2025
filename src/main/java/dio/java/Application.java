@@ -14,7 +14,12 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 //@EntityScan("dio.java.domain.model")
 //@EnableJpaRepositories("dio.java.domain.repository")
 @SpringBootApplication
-@ComponentScan(basePackages = {"dio.java.domain.repository", "dio.java.domain.repository"})
+@ComponentScan(basePackages = {
+		"dio.java.domain.repository",
+		"dio.java.controller",
+		"dio.java.domain.model",
+		"dio.java.service"
+})
 public class Application {
 
 	public static void main(String[] args) {
