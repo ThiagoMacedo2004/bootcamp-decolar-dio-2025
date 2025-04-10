@@ -15,7 +15,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @EnableJpaRepositories("dio.java.domain.repository")
 @EnableAutoConfiguration(exclude = IdentifierGeneratorFactory.class)
 @SpringBootApplication(exclude = {HibernateJpaAutoConfiguration.class})
-
+@ComponentScan(basePackages = {"dio.java.domain.repository", "dio.java.domain.repository"})
 public class Application {
 
 	public static void main(String[] args) {
