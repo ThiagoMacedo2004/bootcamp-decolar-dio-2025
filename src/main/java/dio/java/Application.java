@@ -19,7 +19,8 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 		"dio.java.domain.repository",
 		"dio.java.controller",
 		"dio.java.domain.model",
-		"dio.java.service"
+		"dio.java.service",
+		"dio.java.service.impl"
 })
 public class Application {
 
