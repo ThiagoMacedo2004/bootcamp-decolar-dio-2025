@@ -1,6 +1,8 @@
 package dio.java;
 
+import org.hibernate.id.factory.IdentifierGeneratorFactory;
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
@@ -9,8 +11,9 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 
-@EntityScan("dio.java.domain.*")
-@EnableJpaRepositories("dio.java.domain.*")
+@EntityScan("dio.java.domain.model")
+@EnableJpaRepositories("dio.java.domain.repository")
+@EnableAutoConfiguration(exclude = IdentifierGeneratorFactory.class)
 @SpringBootApplication(exclude = {HibernateJpaAutoConfiguration.class})
 
 public class Application {
