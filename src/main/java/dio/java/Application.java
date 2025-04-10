@@ -11,10 +11,9 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 
-@EntityScan("dio.java.domain.model")
-@EnableJpaRepositories("dio.java.domain.repository")
-@EnableAutoConfiguration(exclude = IdentifierGeneratorFactory.class)
-@SpringBootApplication(exclude = {HibernateJpaAutoConfiguration.class})
+//@EntityScan("dio.java.domain.model")
+//@EnableJpaRepositories("dio.java.domain.repository")
+@SpringBootApplication
 @ComponentScan(basePackages = {"dio.java.domain.repository", "dio.java.domain.repository"})
 public class Application {
 
