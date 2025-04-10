@@ -11,10 +11,9 @@ import java.util.NoSuchElementException;
 @Service
 public class UserServiceImpl implements UserService {
 
-    @Autowired
     private final UserRepository userRepository;
 
-    @Autowired
+
     public UserServiceImpl(UserRepository userRepository) {
         this.userRepository = userRepository;
     }
